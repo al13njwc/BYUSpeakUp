@@ -5,12 +5,12 @@ from pygame import mixer #I am using Pygame for this, though it would be nice to
 from pygame.mixer import music
 
 for i in os.listdir(os.getcwd()): #Goes through the folder. The current file is put in variable "i"
-    if i.endswith(".mp4"): #Looks for different file types. m4a files don't work with Pygame
-        mixer.init(frequency=16000) #Determines how high pitch the voice is played back. 16000 is normal
+    if i.endswith(".wav"): #Looks for .wav file types. m4a files don't work with Pygame
+        #mixer.init(frequency=16000) #Determines how high pitch the voice is played back. 16000 is normal
         mixer.init() 
         music.load(i) #Loads the file that it is currently on ("i") to play
         music.play() #Plays the file
-        time.sleep(10) #Delays the player to stop after X seconds
+        time.sleep(3) #Delays the player to stop after X seconds
         music.stop() #stops the music
         mixer.quit() #Quits Pygame
         continue
