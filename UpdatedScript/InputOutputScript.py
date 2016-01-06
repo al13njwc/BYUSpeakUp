@@ -1,13 +1,20 @@
+#################################################################################
+#                             SETUP INSTRUCTIONS                                #
+#                                                                               #
+# There are two folders that need to be set up. There needs to be on folder     #
+# which I called "CapstoneCode" with files including:                           #
+# SpeechRecognitionWorking1.exe, FinalOutput.csv, InputOutputScript.py,         #
+# FinalOutput.txt, and Output.txt. The second folder is outside this one and    #
+# which I called "AllVoiceSamples" which includes: Input.txt and all voice      #
+# samples that you want to test. You might be able to change how the folders    #
+# are set up if you want to, but this is how I had it set up when this worked.  #
+#################################################################################
+
 import os
 import time
 import subprocess
 import signal
 from subprocess import call
-
-headphones = ["L","P"]
-voices = ["Taylor","Emily","Amberly","Sara"]
-iteration = [1,2,3,4,5,6,7]
-wordList = ["Me", "Kiss", "Fluff", "Yell", "Kind", "Crack", "Hope", "Check", "Lake", "Steep", "Shell", "Bark", "Tooth", "Mouse", "Force", "Fringe", "Flight", "Haunt", "Asked", "Going", "Table", "Giant", "Bully", "Treated", "Spying", "Wiggle", "Shredded", "Picnic", "Decoy", "Slaying", "Scheming", "Happier", "Joyous", "Riotous", "Chow", "Cookie", "Feud", "Eighty", "Host", "Weather", "Crawl", "Stew"]
 
 print "arrays created"
 
@@ -34,8 +41,8 @@ for i in os.listdir(os.path.abspath('C:\Users\Taylor\Desktop\AllVoiceSamples')):
         p.kill() # Kills the c# process since I wasn't able to open the next file or get correct output if I didn't
         print "The process is over"
         time.sleep(2)
-        text_file = open("Output.txt", "a") # The "a" stands for append
-        text_file.write("\n")
+        text_file = open("Output.txt", "a") # The "a" stands for append (it appends to the Output.txt file whatever is written to it)
+        text_file.write("\n") # Writes to the Output.txt file
         text_file.close()
 
         f1 = open('Output.txt', 'r') # These (8) lines are to replace the "_" with a comma and removes the ".wav" ending
