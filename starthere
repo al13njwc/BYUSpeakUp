@@ -1,1 +1,7 @@
-we can start adding code here. We really need to find out which software we are going to use so we can start modifying our work
+according to start using Google Speech_Recognition
+pip install SpeechRecognition
+pip install Pyaudio
+
+change main.py file and add import pyaudio
+
+python -m speech_recognition
