@@ -1,0 +1,20 @@
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="mediaMenu"
+sapi:alphabet="x-microsoft-ups"
+xml:base="http://www.contoso.com/"
+xmlns="http://www.w3.org/2001/06/grammar"
+xmlns:sapi="http://schemas.microsoft.com/Speech/2002/06/SRGSExtensions">
+
+  <lexicon uri="C:\Users\Taylor\Desktop\phonemes.pls" />
+
+  <rule id="mediaMenu" scope="public">
+    <one-of>
+      <item> bhbhbhb </item>
+      <item> khkhkh </item>
+      <item> ljljljl </item>
+      <item><token sapi:display="Jujun" sapi:pron="AE S K T"> Jujune </token></item>
+      <item><token sapi:display="Jujun" sapi:pron="S L EI NG"> Jujune </token></item>
+    </one-of>
+
+  </rule>
+
+</grammar> 
