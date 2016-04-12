@@ -1,0 +1,7 @@
+according to start using Google Speech_Recognition
+pip install SpeechRecognition
+pip install Pyaudio
+
+change main.py file and add import pyaudio
+
+python -m speech_recognition

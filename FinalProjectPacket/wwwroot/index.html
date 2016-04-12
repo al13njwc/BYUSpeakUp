@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<script type="text/javascript">
+
+</script>
+
+<body>
+
+    <div id="box2">
+        <h1><center>ReadingHorizons</center></h1>
+        <h3> Please say the following word: </h3>
+        <p id="result" onload="randomWord();"></p>
+
+        <div align="right">
+  <!--          <img id="image" src="check.png" height="100" width="100" style="display=''">
+            <img id="image" src="exMark.png" height="100" width="100" style="display='none'">
+
+
+  http://localhost/home.html?results=correct&word=tools
+  -->
+
+        </div>
+        <br>
+        <div class="recorder">
+            <input type="button" class="start" value="Start" onclick="startRecording(this);" />
+            <input type="button" class="stop" value="Stop" onclick="stopRecording(this);" disabled/>
+            <input type="button" class="next" value="Next" id="nextActive" onclick="randomWord(); getQueryString();" />
+            <!--<input type="button" class="stop" value="Check" onclick="getOutput();" />-->
+            <a href="C:\\Users\\Taylor\\Desktop\\CapstoneCode\\blahblah.bat" class="button">Run Script</a>
+            <!--<input type="button" class="next" value="" id="Other" onclick="getQueryString();" />
+            <input type="button" class="nextInactive" value="Next" id="nextInactive" onclick="show();" style='display:none' />-->
+            <pre class="status"></pre>
+        </div>
+
+<br><br><br><br><br><br><br>
+       <div id="recordingslist"></div>
+
+    </div>
+ 
+  <pre id="log" hidden></pre>
+
+  <script>
+
+
+  function __log(e, data) {
+    log.innerHTML += "\n" + e + " " + (data || '');
+  }
+
+  var audio_context;
+  var recorder;
+
+  function startUserMedia(stream) {
+    var input = audio_context.createMediaStreamSource(stream);
+    __log('Media stream created.');
+
+    // Uncomment if you want the audio to feedback directly
+    //input.connect(audio_context.destination);
+    //__log('Input connected to audio context destination.');
+    
+    recorder = new Recorder(input);
+    __log('Recorder initialised.');
+  }
+
+  function startRecording(button) {
+    recorder && recorder.record();
+    button.disabled = true;
+    button.nextElementSibling.disabled = false;
+    __log('Recording...');
+  }
+
+  function stopRecording(button) {
+    recorder && recorder.stop();
+    button.disabled = true;
+    button.previousElementSibling.disabled = false;
+    __log('Stopped recording.');
+    
+    // create WAV download link using audio data blob
+    createDownloadLink();
+    
+    recorder.clear();
+  }
+
+  function createDownloadLink() {
+    var theWord = document.getElementById("result").innerHTML;
+    var z = document.createElement("z");
+    recorder && recorder.exportWAV(function(blob) {
+        console.log(blob);
+      var url = URL.createObjectURL(blob);
+        console.log(url);
+      var li = document.createElement('div');
+      var au = document.createElement('audio');
+      var hf = document.createElement('a');
+      
+      au.controls = true;
+      au.src = url;
+      hf.href = url;
+      hf.download =  'word.wav';
+      hf.innerHTML = hf.download;
+      li.appendChild(au);
+      li.appendChild(hf);
+      recordingslist.appendChild(li);
+
+        a.href = url;
+        a.download = "word.wav";
+        a.click();
+    });
+  }
+
+
+  window.onload = function init() {
+    try {
+      // webkit shim
+      window.AudioContext = window.AudioContext || window.webkitAudioContext;
+      navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+      window.URL = window.URL || window.webkitURL;
+      
+      audio_context = new AudioContext;
+      __log('Audio context set up.');
+      __log('navigator.getUserMedia ' + (navigator.getUserMedia ? 'available.' : 'not present!'));
+    } catch (e) {
+      alert('No web audio support in this browser!');
+    }
+    
+    navigator.getUserMedia({audio: true}, startUserMedia, function(e) {
+      __log('No live audio input: ' + e);
+    });
+  };
+
+
+
+    function randomWord() {
+        //console.log("hit");
+        var wordArray = ["me", "kiss", "fluff", "yell", "kind", "crack", "hope", "check", "lake", "steep", "shell", "bark", "tooth", "mouse", "force", "fringe", "flight", "haunt", "asked", "going", "table", "giant", "bully", "treated", "spying", "wiggle", "shredded", "picnic", "decoy", "slaying", "scheming", "happier", "joyous", "riotous", "chow", "cookie", "feud", "eighty", "host", "weather", "crawl", "stew"];
+        var resultWord = wordArray[Math.floor(Math.random() * wordArray.length)];
+        document.getElementById("result").innerHTML = resultWord;
+        //console.log(resultWord);
+
+        //readTextFile(Output.txt);
+        //changeURL(resultWord, serverResponse);
+
+        $.get('C:\\Users\\Taylor\\Desktop\\CapstoneCode\\Output.txt', function(data) {
+            changeURL(resultWord, data)
+        }, 'text');
+    }
+
+    function readTextFile(file)
+    {
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    alert(allText);
+                }
+            }
+        }
+        rawFile.send(null);
+    }
+
+    function changeURL(word, results){
+        //console.log(word);
+        //console.log(results);
+        if(results == word){
+            document.location = "?results=correct"+"&word="+word;
+        }else{
+            document.location = "?results=incorrect"+"&word="+word;
+        }
+    }
+
+    function hide() {
+        document.getElementById("nextActive").style.display = 'none';
+        document.getElementById("nextInactive").style.display = '';
+        document.getElementById("image").style.display = 'none';
+    }
+
+    function show() {
+        document.getElementById("nextActive").style.display = '';
+        document.getElementById("nextInactive").style.display = 'none';
+        document.getElementById("image").style.display = '';
+    }
+
+
+function getQueryString() {
+  var result = {}, queryString = location.search.slice(1),
+      re = /([^&=]+)=([^&]*)/g, m;
+  while (m = re.exec(queryString)) {
+    result[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+  }
+
+  //console.log(result);
+  return result;
+}
+
+// ...
+var myParam = getQueryString()["results"];
+var mySecondParam = getQueryString()["word"];
+//console.log(myParam);
+//console.log(mySecondParam);
+
+if (myParam == "correct"){
+  document.getElementById("image").src="check.png";
+  document.getElementById("result").innerHTML = mySecondParam;
+} else {
+  document.getElementById("image").src="exMark.png";
+  document.getElementById("result").innerHTML = mySecondParam;
+};
+
+  </script>
+
+  <script src="recorder.js"></script>
+</body>
+</html>

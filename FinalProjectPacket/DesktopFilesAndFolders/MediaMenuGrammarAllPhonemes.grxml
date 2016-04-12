@@ -1,0 +1,164 @@
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="mediaMenu"
+sapi:alphabet="x-microsoft-ups"
+xml:base="http://www.contoso.com/"
+xmlns="http://www.w3.org/2001/06/grammar"
+xmlns:sapi="http://schemas.microsoft.com/Speech/2002/06/SRGSExtensions">
+
+  <lexicon uri="C:\Users\Taylor\Desktop\phonemes.pls" />
+
+  <rule id="mediaMenu" scope="public">
+    <one-of>
+      <item> Asked </item>
+      <item><token sapi:display="Asked" sapi:pron="AE S K T"> Asked </token></item>
+      <item><token sapi:display="Asked" sapi:pron="AE S T"> Asked </token></item>
+      <item><token sapi:display="Asked" sapi:pron="AE S"> Asked </token></item>
+      <item> Bark </item>
+      <item><token sapi:display="Bark" sapi:pron="B AA R K"> Bark </token></item>
+      <item> Bully </item>
+      <item><token sapi:display="Bully" sapi:pron="B O L I"> Bully </token></item>
+      <item> Check </item>
+      <item><token sapi:display="Check" sapi:pron="CH EH K"> Check </token></item>
+      <item> Chow </item>
+      <item><token sapi:display="Chow" sapi:pron="CH AU"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AE W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="ch ae w"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="T AE W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AE L"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="T AE L"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="T A L"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AU W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AU L"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AA W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AA L"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="T AA L"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AA"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AH W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AH L"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AH"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AX W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AX L"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AX"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AOX W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AOX L"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="CH AOX"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="AU W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="AA W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="AH W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="AX W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="AOX W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AU W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AU"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AA W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AA"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AH W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AH"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AX W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AX"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AOX W"> Chow </token></item>
+      <item><token sapi:display="Chow" sapi:pron="SH AOX"> Chow </token></item>
+      <item> Cookie </item>
+      <item><token sapi:display="Cookie" sapi:pron="K UH K I"> Cookie </token></item>
+      <item> Crack </item>
+      <item><token sapi:display="Crack" sapi:pron="K R AE K"> Crack </token></item>
+      <item> Crawl </item>
+      <item><token sapi:display="Crawl" sapi:pron="K R AA L"> Crawl </token></item>
+      <item> Decoy </item>
+      <item><token sapi:display="Decoy" sapi:pron="D I K O I"> Decoy </token></item>
+      <item> Eighty </item>
+      <item><token sapi:display="Eighty" sapi:pron="EI T I"> Eighty </token></item>
+      <item> Feud </item>
+      <item><token sapi:display="Feud" sapi:pron="F I U D"> Feud </token></item>
+      <item> Flight </item>
+      <item><token sapi:display="Flight" sapi:pron="F L AI T"> Flight </token></item>
+      <item> Fluff </item>
+      <item><token sapi:display="Fluff" sapi:pron="F L AX F"> Fluff </token></item>
+      <item><token sapi:display="Fluff" sapi:pron="F L AU F"> Fluff </token></item>
+      <item> Force </item>
+      <item><token sapi:display="Force" sapi:pron="F AOX R S"> Force </token></item>
+      <item><token sapi:display="Force" sapi:pron="F AX rho S"> Force </token></item>
+      <item> Fringe </item>
+      <item><token sapi:display="Fringe" sapi:pron="F R IH N JH"> Fringe </token></item>
+      <item> Giant </item>
+      <item><token sapi:display="Giant" sapi:pron="JH AI AE N T"> Giant </token></item>
+      <item> Going </item>
+      <item><token sapi:display="Going" sapi:pron="G AOX I NG"> Going </token></item>
+      <item><token sapi:display="Going" sapi:pron="G AOX I"> Going </token></item>
+      <item><token sapi:display="Going" sapi:pron="G AOX NG"> Going </token></item>
+      <item> Happier </item>
+      <item><token sapi:display="Happier" sapi:pron="H AE P I ER"> Happier </token></item>
+      <item> Haunt </item>
+      <item><token sapi:display="Haunt" sapi:pron="H AO N T"> Haunt </token></item>
+      <item> Hope </item>
+      <item><token sapi:display="Hope" sapi:pron="H AOX P"> Hope </token></item>
+      <item> Host </item>
+      <item><token sapi:display="Host" sapi:pron="H AOX S T"> Host </token></item>
+      <item> Joyous </item>
+      <item><token sapi:display="Joyous" sapi:pron="JH AOX I AX S"> Joyous </token></item>
+      <item> Kind </item>
+      <item><token sapi:display="Kind" sapi:pron="K AI T"> Kind </token></item>
+      <item> Kiss </item>
+      <item><token sapi:display="Kiss" sapi:pron="K IH S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="K S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="K I S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="K EH S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="K AI S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="K IH S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="K EHX S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="CH I S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="CH S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="CH EH S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="CH AI S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="CH IH S"> Kiss </token></item>
+      <item><token sapi:display="Kiss" sapi:pron="CH EHX S"> Kiss </token></item>
+      <item> Lake </item>
+      <item><token sapi:display="Lake" sapi:pron="L EI K"> Lake </token></item>
+      <item> Me </item>
+      <item><token sapi:display="Me" sapi:pron="M I"> Me </token></item>
+      <item> Mouse </item>
+      <item><token sapi:display="Mouse" sapi:pron="M AU S"> Mouse </token></item>
+      <item> Picnic </item>
+      <item><token sapi:display="Picnic" sapi:pron="P IH K N IH K"> Picnic </token></item>
+      <item> Riotous </item>
+      <item><token sapi:display="Riotous" sapi:pron="R AI AX T AX S"> Riotous </token></item>
+      <item> Scheming </item>
+      <item><token sapi:display="Scheming" sapi:pron="S K I M I NG"> Scheming </token></item>
+      <item><token sapi:display="Scheming" sapi:pron="S K I M NG"> Scheming </token></item>
+      <item><token sapi:display="Scheming" sapi:pron="S K I M I"> Scheming </token></item>
+      <item> Shell </item>
+      <item><token sapi:display="Shell" sapi:pron="SH EHX L"> Shell </token></item>
+      <item> Slaying </item>
+      <item><token sapi:display="Slaying" sapi:pron="S L EI NG"> Slaying </token></item>
+      <item> Shredded </item>
+      <item><token sapi:display="Shredded" sapi:pron="SH R EH D IH D"> Shredded </token></item>
+      <item><token sapi:display="Shredded" sapi:pron="SH R EH D EH D"> Shredded </token></item>
+      <item> Spying </item>
+      <item><token sapi:display="Spying" sapi:pron="S P AI I NG"> Spying </token></item>
+      <item><token sapi:display="Spying" sapi:pron="S P AI NG"> Spying </token></item>
+      <item><token sapi:display="Spying" sapi:pron="S P AI I"> Spying </token></item>
+      <item> Steep </item>
+      <item><token sapi:display="Steep" sapi:pron="S T I P"> Steep </token></item>
+      <item> Stew </item>
+      <item><token sapi:display="Stew" sapi:pron="S T U"> Stew </token></item>
+      <item> Table </item>
+      <item><token sapi:display="Table" sapi:pron="T EI B L"> Table </token></item>
+      <item><token sapi:display="Table" sapi:pron="T EI B O L"> Table </token></item>
+      <item><token sapi:display="Table" sapi:pron="T EI B O"> Table </token></item>
+      <item> Tooth </item>
+      <item><token sapi:display="Tooth" sapi:pron="T U TH"> Tooth </token></item>
+      <item> Treated </item>
+      <item><token sapi:display="Treated" sapi:pron="T R I T EH D"> Treated </token></item>
+      <item><token sapi:display="Treated" sapi:pron="T R I T IH D"> Treated </token></item>
+      <item> Weather </item>
+      <item><token sapi:display="Weather" sapi:pron="W EH TH R"> Weather </token></item>
+      <item><token sapi:display="Weather" sapi:pron="W EH TH AX rho"> Weather </token></item>
+      <item><token sapi:display="Weather" sapi:pron="W EH TH ER"> Weather </token></item>
+      <item> Wiggle </item>
+      <item><token sapi:display="Wiggle" sapi:pron="W IH G L"> Wiggle </token></item>
+      <item><token sapi:display="Wiggle" sapi:pron="W IH G O L"> Wiggle </token></item>
+      <item> Yell </item>
+      <item><token sapi:display="Yell" sapi:pron="Y EH L"> Yell </token></item>
+    </one-of>
+
+  </rule>
+
+</grammar> 

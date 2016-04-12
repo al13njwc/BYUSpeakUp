@@ -1,0 +1,9 @@
+c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\bin\Release\WindowsSpeechVoice.exe.config
+c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\bin\Release\WindowsSpeechVoice.exe
+c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\bin\Release\WindowsSpeechVoice.pdb
+c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Release\WindowsSpeechVoice.csprojResolveAssemblyReference.cache
+c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Release\WindowsSpeechVoice.Form1.resources
+c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Release\WindowsSpeechVoice.Properties.Resources.resources
+c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Release\WindowsSpeechVoice.csproj.GenerateResource.Cache
+c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Release\WindowsSpeechVoice.exe
+c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Release\WindowsSpeechVoice.pdb

@@ -1,0 +1,6 @@
+c:\users\taylor\documents\visual studio 2012\Projects\SpeechRecognitionWorking1\SpeechRecognitionWorking1\bin\Debug\SpeechRecognitionWorking1.exe.config
+c:\users\taylor\documents\visual studio 2012\Projects\SpeechRecognitionWorking1\SpeechRecognitionWorking1\bin\Debug\SpeechRecognitionWorking1.exe
+c:\users\taylor\documents\visual studio 2012\Projects\SpeechRecognitionWorking1\SpeechRecognitionWorking1\bin\Debug\SpeechRecognitionWorking1.pdb
+c:\users\taylor\documents\visual studio 2012\Projects\SpeechRecognitionWorking1\SpeechRecognitionWorking1\obj\Debug\SpeechRecognitionWorking1.exe
+c:\users\taylor\documents\visual studio 2012\Projects\SpeechRecognitionWorking1\SpeechRecognitionWorking1\obj\Debug\SpeechRecognitionWorking1.pdb
+c:\users\taylor\documents\visual studio 2012\Projects\SpeechRecognitionWorking1\SpeechRecognitionWorking1\obj\Debug\SpeechRecognitionWorking1.csprojResolveAssemblyReference.cache
