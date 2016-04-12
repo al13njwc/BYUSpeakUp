@@ -1,9 +1,0 @@
-c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\bin\Debug\WindowsSpeechVoice.exe.config
-c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\bin\Debug\WindowsSpeechVoice.exe
-c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\bin\Debug\WindowsSpeechVoice.pdb
-c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Debug\WindowsSpeechVoice.csprojResolveAssemblyReference.cache
-c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Debug\WindowsSpeechVoice.Form1.resources
-c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Debug\WindowsSpeechVoice.Properties.Resources.resources
-c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Debug\WindowsSpeechVoice.csproj.GenerateResource.Cache
-c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Debug\WindowsSpeechVoice.exe
-c:\users\taylor\documents\visual studio 2012\Projects\WindowsSpeechVoice\WindowsSpeechVoice\obj\Debug\WindowsSpeechVoice.pdb

@@ -1,2 +1,0 @@
-# BYUSpeakUp
-BYU capstone project
